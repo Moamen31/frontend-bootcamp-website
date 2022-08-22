@@ -1,0 +1,84 @@
+:root {
+    --dark-blue: #1e2126;
+}
+
+/* start navbar */
+.navbar {
+    background-color: var(--dark-blue);
+}
+
+.navbar .nav-item a {
+    color: #999;
+}
+
+/* end navbar */
+
+/* start landing */
+.landing {
+    background-color: var(--dark-blue);
+}
+
+.landing .text h1 span {
+    color: #ffb630;
+}
+
+.landing .enrollment form input {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+/* end landing */
+
+/* start newsletter */
+.newsletter form input {
+    width: 75%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 2px;
+    outline: none;
+}
+
+.newsletter form button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+/* end newsletter */
+
+/* start work */
+.work .box:not(.lighter) {
+    background-color: var(--dark-blue);
+}
+
+.work .lighter {
+    background-color: #616971;
+}
+
+/* end work */
+
+/* start learn react */
+.react {
+    background-color: var(--dark-blue);
+}
+
+/* end learn react */
+
+/* start faq */
+.faq .accordion-item button {
+    box-shadow: none;
+}
+
+/* end faq */
+
+/* start footer */
+footer {
+    background-color: var(--dark-blue);
+}
+
+/* end footer */

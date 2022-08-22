@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd | Bootcamp</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootcamp.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo text-light fw-bold" href="#">FrontEnd Bootcamp</a>
+            <!-- menu to come up from the right -->
+            <button class="d-lg-none menu-btn bg-transparent text-white border-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                    class="fa-solid fa-bars fs-3"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Our Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" ria-current="page" href="#fundamentals">What You'll Learn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#instructors">Instructors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start landing -->
+    <section class="landing pt-5 text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="text mb-4">
+                        <h1 class="mb-4">Become a <span>Web Developer</span></h1>
+                        <p class="lh-s mb-4 text-white-50">We focus on teaching our students the fundamentals of the
+                            latest and greated technologies to
+                            prepare them for their first dev role</p>
+                        <div class="enrollment">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary fw-semibold" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Start Enrollment</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content text-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Enrollment Form</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="mb-3">Fill out this form and we will get back to you</p>
+                                            <form action="">
+                                                <label class="mb-1 fw-semibold" for="fname">First Name:</label>
+                                                <input class="w-100 mb-4 rounded-1 py-1" id="fname" type="text">
+                                                <label class="mb-1 fw-semibold" for="lname">Last Name:</label>
+                                                <input class="w-100 mb-4 rounded-1 py-1" id="lname" type="text">
+                                                <label class="mb-1 fw-semibold" for="email">Email:</label>
+                                                <input class="w-100 mb-4 rounded-1 py-1" id="email" type="text">
+                                                <label class="mb-1 fw-semibold" for="phone">Phone:</label>
+                                                <input class="w-100 mb-4 rounded-1 py-1" id="phone" type="text">
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img class="img-fluid" src="imgs/showcase.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end landing -->
+
+    <!-- start newsletter -->
+    <section class="newsletter py-4 bg-primary">
+        <div class="container">
+            <div class="row text-white align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="mb-4 mb-md-0">Sign Up Our Newsletter</h4>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <form class="position-relative" action="">
+                        <input class="p-1 w-100" type="text" placeholder="Enter Email">
+                        <button type="button" class="fw-semibold py-1 px-3">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end newsletter -->
+
+    <!-- start working -->
+    <section class="work py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="box text-light p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-laptop" viewBox="0 0 16 16">
+                            <path
+                                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                        </svg>
+                        <h3 class="my-2">Virtual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus, sit laudantium magni
+                            corrupti.</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="box lighter text-light p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-person-square" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path
+                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
+                        </svg>
+                        <h3 class="my-2">Virtual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus, sit laudantium magni
+                            corrupti.</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="box text-light p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path fill-rule="evenodd"
+                                d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                        </svg>
+                        <h3 class="my-2">Virtual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus, sit laudantium magni
+                            corrupti.</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end working -->
+
+    <!-- start fundamentals -->
+    <section class="fundamentals py-5" id="fundamentals">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <img class="img-fluid" src="imgs/fundamentals.svg" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 text-center text-md-start">
+                    <div class="text mt-3 m-md-0">
+                        <h3 class="fw-bold">Learn The Fundamentals</h3>
+                        <p class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing. Incidunt rem eligendi
+                            similique
+                            suscipit, molestias pariatur eveniet!</p>
+                        <p class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing. Harum quasi neque qui
+                            exercitationem
+                            voluptas delectus sequi, tempora recusandae doloribus repellendus Animi itaque possimus
+                            autem!</p>
+                        <button class="btn btn-light fw-semibold bg-transparent"><i
+                                class="fs-6 fa-solid fa-angle-right"></i> Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end fundamentals -->
+
+    <!-- start learn react -->
+    <section class="react text-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 text-center text-md-start mb-5 mb-md-0">
+                    <div class="text mt-3 m-md-0">
+                        <h3 class="fw-bold">Learn React</h3>
+                        <p class="fw-semibold text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            Incidunt rem eligendi similique
+                            suscipit, molestias pariatur eveniet!</p>
+                        <p class="fw-semibold text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing. Harum
+                            quasi neque qui exercitationem
+                            voluptas delectus sequi, tempora recusandae doloribus repellendus Animi itaque possimus
+                            autem!</p>
+                        <button class="btn btn-light fw-semibold mt-2"><i class="fs-6 fa-solid fa-angle-right"></i> Read
+                            More</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 text-sm-center text-md-start">
+                    <img class="img-fluid" src="imgs/react.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end learn react -->
+
+    <!-- start FAQ -->
+    <section class="faq py-5 text-center" id="faq">
+        <div class="container">
+            <h1 class="mb-5">Frequently Asked Questions</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Where exactly are you located?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at quam quia ratione officia
+                            eius error praesentium debitis, voluptatibus, aliquid dolorum. Hic voluptatum, numquam nisi
+                            temporibus dignissimos id sint quisquam?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis molestiae
+                            adipisci asperiores accusamus dicta provident beatae quisquam, odit nam, expedita totam
+                            ipsam reprehenderit incidunt minus aperiam fugit, officia sequi.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How much does it codt to attend?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at quam quia ratione officia
+                            eius error praesentium debitis, voluptatibus, aliquid dolorum. Hic voluptatum, numquam nisi
+                            temporibus dignissimos id sint quisquam?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis molestiae
+                            adipisci asperiores accusamus dicta provident beatae quisquam, odit nam, expedita totam
+                            ipsam reprehenderit incidunt minus aperiam fugit, officia sequi.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What do i need to know?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at quam quia ratione officia
+                            eius error praesentium debitis, voluptatibus, aliquid dolorum. Hic voluptatum, numquam nisi
+                            temporibus dignissimos id sint quisquam?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis molestiae
+                            adipisci asperiores accusamus dicta provident beatae quisquam, odit nam, expedita totam
+                            ipsam reprehenderit incidunt minus aperiam fugit, officia sequi.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How do i sign up?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at quam quia ratione officia
+                            eius error praesentium debitis, voluptatibus, aliquid dolorum. Hic voluptatum, numquam nisi
+                            temporibus dignissimos id sint quisquam?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis molestiae
+                            adipisci asperiores accusamus dicta provident beatae quisquam, odit nam, expedita totam
+                            ipsam reprehenderit incidunt minus aperiam fugit, officia sequi.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Do you help me find a job?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at quam quia ratione officia
+                            eius error praesentium debitis, voluptatibus, aliquid dolorum. Hic voluptatum, numquam nisi
+                            temporibus dignissimos id sint quisquam?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis molestiae
+                            adipisci asperiores accusamus dicta provident beatae quisquam, odit nam, expedita totam
+                            ipsam reprehenderit incidunt minus aperiam fugit, officia sequi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end FAQ -->
+
+    <!-- start our instructors -->
+    <section class="instructors py-5 bg-primary" id="instructors">
+        <div class="container">
+            <div class="heading text-center text-light mb-5">
+                <h2>Our Instructors</h2>
+                <p>Our instructors all have 5+ years working as a web developer in the industry</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 p-2">
+                    <div class="card">
+                        <img src="imgs/inst-01.jpeg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h4>John Doe</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook p-2"></i>
+                                <i class="fa-brands fa-twitter p-2"></i>
+                                <i class="fa-brands fa-linkedin p-2"></i>
+                                <i class="fa-brands fa-instagram p-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-2">
+                    <div class="card">
+                        <img src="imgs/inst-02.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h4>John Doe</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook p-2"></i>
+                                <i class="fa-brands fa-twitter p-2"></i>
+                                <i class="fa-brands fa-linkedin p-2"></i>
+                                <i class="fa-brands fa-instagram p-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-2">
+                    <div class="card">
+                        <img src="imgs/inst-03.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h4>John Doe</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook p-2"></i>
+                                <i class="fa-brands fa-twitter p-2"></i>
+                                <i class="fa-brands fa-linkedin p-2"></i>
+                                <i class="fa-brands fa-instagram p-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-2">
+                    <div class="card">
+                        <img src="imgs/inst-04.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h4>John Doe</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook p-2"></i>
+                                <i class="fa-brands fa-twitter p-2"></i>
+                                <i class="fa-brands fa-linkedin p-2"></i>
+                                <i class="fa-brands fa-instagram p-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end our instructors -->
+
+    <!-- start contact -->
+    <section class="contact py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Contact Info</h3>
+                    <ul class="info list-unstyled">
+                        <li class="fw-bold py-2 border-bottom">Main Location: <span class="fw-semibold">50 Main st
+                                Boston MA</span></li>
+                        <li class="fw-bold py-2 border-bottom">Enrollment Phone: <span class="fw-semibold">(555)
+                                555-5555</span></li>
+                        <li class="fw-bold py-2 border-bottom">Student Phone: <span class="fw-semibold">(333)
+                                333-3333</span></li>
+                        <li class="fw-bold py-2 border-bottom">Enrollment Email: <span class="fw-semibold">(555)
+                                enroll@gmail.com</span>
+                        </li>
+                        <li class="fw-bold py-2 border-bottom">Student Email: <span
+                                class="fw-semibold">student@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="imgs/map-img.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <footer class="py-4 text-center text-light fs-6">
+        <div class="container">
+            <p class="m-0">Copyright © 2021 FrontEnd Bootcamp</p>
+            <p class="fw-semibold m-0">Coded By Mo'men Ashraf</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
